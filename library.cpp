@@ -44,7 +44,6 @@ void Library::display()
     }
 }
 
-MediaItem* Library::binarySearch(string title)
 MediaItem* Library::findByTitle(string title)
 {
     for (int i = 0; i < count; i++)
@@ -57,6 +56,8 @@ MediaItem* Library::findByTitle(string title)
 
     return nullptr;
 }
+
+MediaItem* Library::binarySearch(string title)
 {
     int low = 0;
     int high = count - 1;
